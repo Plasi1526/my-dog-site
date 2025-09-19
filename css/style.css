@@ -1,0 +1,320 @@
+/* Логопит шапка сайта */
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 40px 40px; 
+    background: rgb(131, 131, 131);
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    margin-left: 10px;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+ }
+.logo h1 {
+    margin-top: 30px ;
+}
+/* Стили для списка шапки */
+.hero-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    flex: 1;
+    margin-right: 50px;
+}
+.hero-header nav li {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 20px;
+}
+.hero-header nav a {
+    color: #1b1818;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.hero-header nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+    transform: translateY(-2px) scale(0.98);
+}
+/* Для всего контейнера размер-шрифта, выравнивание */
+.main-content {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* 1-й блок */
+.hero h2 {
+    font-size: 3rem;
+    color: #1b1818;
+}
+.hero p {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 40px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+}
+/* кнопка ПРОСМОТРА пород */
+.hero .btn {
+    font-size: 25px;
+    padding: 10px 80px;
+}
+/* Настройки для всех кнопок */
+.btn {
+    background: rgb(131, 131, 131);
+    color: white;
+    border: 3px solid #1b1818;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;  
+}
+.btn:hover {
+    background: rgb(74, 74, 74);
+    transform: translateY(-2px) scale(0.96);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+/* Стиль для - библиотеки */
+.breeds-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+.breeds-section h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Стиль для карточек */
+.breed-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.breed-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.breed-card:hover {
+    transform: translateY(-5px);
+}
+.breed-card a {
+    flex: 1;
+    width: 50%;
+    padding: 5px 5px;
+}
+.image-cont {
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border: 2px solid #1b1818;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.image-cont img:hover {
+    transform: scale(1.05);
+}
+
+/* 3-й раздел ПОЧЕМУ МЫ */
+.about-section {
+    width: 1160px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 40px 40px; 
+    margin: 0 auto;
+}
+.about-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1b1818;
+    margin-bottom: 50px;
+}
+.about-section p {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 60px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 20px; 
+    background: rgb(131, 131, 131);
+    padding: 40px 40px;
+
+}
+footer p {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    margin-right: 50px
+}
+footer nav li {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+footer nav a {
+    color: #1b1818;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+footer nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(-2px) scale(0.98);
+}
+/* Отзыв и карточки заполнения */
+.feedback-section {
+    width: 1160px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);     
+    padding: 40px 40px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+.feedback-section h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feedback-columns {
+    display: flex;    
+    gap: 20px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.feedback-text {
+    flex: 1;
+    max-width: 500px;
+
+}
+.feedback-text h3 {    
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.feedback-text p {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 40px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+
+}
+.feedback-form-wrapper {
+    flex: 1;
+}
+.feedback-form {
+    width: 400px;
+    margin-left: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(94, 94, 94, 0.15);
+    padding: 30px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group input,
+.form-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #4e4e4e;
+    border-radius: 8px;
+    font-family: sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3x ease;
+    background: #fafafa;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4b4b4b;
+    box-shadow: 0 0 0 3px rgb(55, 55, 55);
+    background: #fff;
+}
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    background: #727272;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: backgraund 0.3s ease, transform 0.2s ease;    
+}
+.btn-submit:hover {
+    background: #2f2f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(32, 32, 32);
+}
+.btn-submit:active {
+    transform: translateY(0);
+}
