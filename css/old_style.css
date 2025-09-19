@@ -1,4 +1,4 @@
-/* ====== ГЛОБАЛЬНЫЕ НАСТРОЙКИ ====== */
+/* === ГЛОБАЛЬНЫЕ НАСТРОЙКИ ==== */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -8,18 +8,18 @@ body {
     background: #f9f9f9;
 }
 
-/* ====== ШАПКА ====== */
+/* === ШАПКА === */
 .hero-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px;    
     margin: 10px;
-    padding: 40px;
     border-radius: 10px;
-    background: rgb(131, 131, 131);
     box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 40px; 
+    background: rgb(131, 131, 131);
 }
 
 .logo {
@@ -30,12 +30,12 @@ body {
 .logo img {
     width: 100px;
     height: 100px;
-}
+ }
 .logo h1 {
     margin: 0;
 }
 
-/* Меню */
+/* === Меню === */
 .hero-header nav {
     flex: 1 1 auto;
     min-width: 220px;
@@ -46,33 +46,31 @@ body {
     justify-content: flex-end;
     flex-wrap: wrap;
     list-style: none;
-    gap: 20px;
     margin: 0;
     padding: 0;
 }
 .hero-header nav a {
     color: #1b1818;
     font-size: 1.5rem;
-    font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    transition: all 0.3s ease;    
 }
 .hero-header nav a:hover {
     text-decoration: underline;
     color: #fff;
     transform: translateY(-2px) scale(0.98);
 }
-
-/* ====== ОСНОВНОЙ КОНТЕНТ ====== */
+/* ==== ОСНОВНОЙ КОНТЕНТ ==== */
 .main-content {
     max-width: 1200px;
+    font-size: 24px;
+    text-align: center;  
     margin: 5% auto;
     padding: 0 20px;
-    text-align: center;
-    font-size: 24px;
 }
 
-/* Герой-блок */
+/* --- Герой-блок --- */
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -80,16 +78,16 @@ body {
 .hero p {
     font-size: 1.8rem;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.6;    
     margin-bottom: 40px;
 }
 
-/* Кнопки */
+/* --- Кнопки --- */
 .btn, .btn-submit {
     display: inline-block;
     text-align: center;
     background: rgb(131, 131, 131);
-    color: #fff;
+    color: white;
     border: 3px solid #1b1818;
     border-radius: 6px;
     font-size: 20px;
@@ -109,7 +107,8 @@ body {
     border: none;
 }
 
-/* ====== БИБЛИОТЕКА ПОРОД ====== */
+
+/* ==== БИБЛИОТЕКА ПОРОД ==== */
 .breeds-section {
     display: flex;
     flex-wrap: wrap;
@@ -124,29 +123,30 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+/* --- Стиль для карточек --- */
 .breed-card {
-    flex: 1 1 300px;
+    flex: 1 1 300px;    
     max-width: 350px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(32, 32, 32);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;    
+}
+.breed-card h3 {    
+    font-size: 1.5rem;
+    margin-bottom: 15px;    
 }
 .breed-card:hover {
     transform: translateY(-5px);
 }
-.breed-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
 .image-cont {
     width: 100%;
     height: 450px;
+    overflow: hidden;
     border: 2px solid #1b1818;
     border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 .image-cont img {
     width: 100%;
@@ -158,20 +158,20 @@ body {
     transform: scale(1.05);
 }
 
-/* ====== О НАС ====== */
+/* === О НАС === */
 .about-section,
 .feedback-section {
     max-width: 1160px;
     margin: 40px auto;
     padding: 40px;
-    border-radius: 5px;
+    border-radius: 5px;    
     box-shadow: 0 3px 10px rgb(32, 32, 32);
     background: #fff;
 }
 .about-section h2,
 .feedback-section h2 {
-    font-size: 3rem;
     text-align: center;
+    font-size: 3rem;    
     margin-bottom: 30px;
 }
 .about-section p {
@@ -179,8 +179,7 @@ body {
     font-style: italic;
     line-height: 1.6;
 }
-
-/* ====== ОТЗЫВЫ ====== */
+/* === ОТЗЫВЫ ===*/
 .feedback-columns {
     display: flex;
     gap: 20px;
@@ -192,11 +191,6 @@ body {
     max-width: 500px;
 }
 .feedback-text h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.feedback-text p {
     font-size: 1.4rem;
     font-style: italic;
     line-height: 1.6;
@@ -230,14 +224,14 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: #4b4b4b;
-    box-shadow: 0 0 0 3px rgb(55, 55, 55);
+    box-shadow: 0 0 0 3px rgb(55, 55, 55);    
 }
 .form-group textarea {
     min-height: 150px;
     resize: vertical;
 }
 
-/* ====== ПОДВАЛ ====== */
+/* ===  ПОДВАЛ ===*/
 footer {
     display: flex;
     justify-content: space-between;
@@ -247,98 +241,56 @@ footer {
     padding: 40px;
     border-radius: 10px;
     background: rgb(131, 131, 131);
-    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    box-shadow: 0 3px 10px rgb(32, 32, 32);    
 }
 footer p {
     font-size: 1.3rem;
     margin: 0;
 }
+
 footer nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;    
     gap: 20px;
     margin: 0;
     padding: 0;
 }
+
 footer nav a {
     color: #1b1818;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;    
 }
 footer nav a:hover {
+    text-decoration: none;
     color: #fff;
     transform: translateY(-2px) scale(0.98);
 }
 
-/* ====== АДАПТИВ ====== */
-
-/* телефоны */
-@media (max-width: 480px) {
-    body {
-        font-size: 16px;
-    }
-    .hero-header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-header nav ul {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 15px;
-    }
-    .hero h2 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1.2rem;
-    }
-    .breeds-section {
-        gap: 15px;
-    }
-    .breed-card {
-        max-width: 100%;
-    }
-    footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-}
-
-/* планшеты */
-@media (min-width: 481px) and (max-width: 1024px) {
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-    .hero p {
-        font-size: 1.4rem;
-    }
-    .breed-card {
-        flex: 1 1 calc(50% - 20px);
-        max-width: 45%;
-    }
+@media (max-width: 768px) {
     .feedback-columns {
         flex-direction: column;
         align-items: center;
     }
-}
-
-/* большие экраны */
-@media (min-width: 1400px) {
-    .main-content,
-    .about-section,
-    .feedback-section {
-        max-width: 1400px;
+    .feedback-form {
+        width: 100%;
     }
-    .hero h2 {
-        font-size: 3.5rem;
+    .hero-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .hero p {
-        font-size: 2rem;
+    .hero-header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0 0 0;
+        padding: 0;
     }
-    .breed-card {
-        max-width: 400px;
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }
