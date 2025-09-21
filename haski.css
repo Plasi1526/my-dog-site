@@ -1,0 +1,71 @@
+p {
+    font-style: italic;
+}
+/* === ИСТОРИЯ ХАСКИ === */
+.content-block-reverse,
+.content-block-center-image,
+.content-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 60px 50px;
+    padding-top: 10px;
+}
+
+.content-block-reverse h2,
+.content-block-center-image h2,
+.content-block h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.size-history img,
+.image-side img,
+.three-side img,
+.whay-image img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid #50576e;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(101, 118, 133);
+}
+.text-side,
+.three-text,
+.whay-side {
+    flex: 1;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.three-side {    
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    max-height: 600px;
+}
+ 
+.whay-image,
+.size-history {
+    flex: 1;
+    height: auto;
+    padding-top: 50px;
+}
+
+.size-history img {
+    width: 300px;
+}
+.three-side img {
+    width: 400px;
+    height: 400px;
+    margin-top: 0;
+}

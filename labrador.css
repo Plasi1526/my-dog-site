@@ -1,0 +1,104 @@
+p {
+    font-style: italic;
+}
+/* == Для блоков ==*/
+.content-block-history,
+.content-block-facts,
+.content-block-center-image,
+.content-block-whay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(32, 32, 32);
+    padding: 60px 50px;
+    padding-top: 10px;
+
+}
+
+/* == для заголовков == */
+.hero-text h2 {
+    font-size: 4rem;
+}
+
+.content-block-history h2,
+.content-block-facts h2,
+.content-block-center-image h2,
+.content-block-whay h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* == рамка и тень для фото == */
+
+.image-hero img,
+.image-history img,
+.interesting-image img,
+.three-image img,
+.whay-image img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px solid #50576e;
+    box-shadow: 0 10px 20px rgb(101, 118, 133);
+}
+
+/* стили для текста */
+.text-history,
+.interesting-facts-text,
+.three-text,
+.whay-text {
+    flex: 1;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.text-history,
+.interesting-facts-text,
+.whay-text {
+    padding-top: 50px;
+}
+
+/* корекция фото */
+.three-image {
+    flex: 1;
+    max-width: 900px;
+    text-align: center;
+    max-height: 900px;
+}
+.image-history, 
+.whay-image,
+.interesting-image {
+    flex: 1;
+    height: auto;
+    padding-top: 50px;
+}
+
+.image-hero img {
+    width: 800px;
+    margin-bottom: 40px;
+}
+
+.image-history img,
+.interesting-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    .image-hero img {
+        width: 100%;
+    }
+}
+
